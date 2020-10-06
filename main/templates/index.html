@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <p>{{request.session.counter}} times</p>
+    <form action='/' method='post'>
+		<input type='submit' value='addtwo'>
+	</form>
+	<form action='/destroy_session' method='post'>
+		<input type='submit' value='clears'>
+	</form>
+</body>
+</html>
